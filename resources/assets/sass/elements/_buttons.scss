@@ -1,0 +1,10 @@
+.btn-primary {
+  background-color: $button-color;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
+  @include box-shadow();
+  &:hover {
+    background-color: darken($button-color, 25%);
+    border: none;
+  }
+}

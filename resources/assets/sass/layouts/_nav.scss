@@ -1,0 +1,16 @@
+nav.header {
+  background-color: transparentize($body-bg, .10);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  .nav-links {
+    padding: 15px 0;
+  }
+  .social {
+    img {
+      margin: 0 5px;
+      max-height: 20px;
+    }
+  }
+}
