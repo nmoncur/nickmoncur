@@ -93,7 +93,7 @@
               <div class="col-sm-6 offset-sm-3"><p>I have a knack for self-learning. From saxophone to VueJs, I've found I can learn and do anything I commit to.</p></div>
             </div>
             <div class="row">
-              <div class="col-5 col-sm-4 offset-sm-3">
+              <div class="col-5 col-sm-4 offset-1 offset-sm-3">
                 <ul>
                   <li>PHP</li>
                   <li>Laravel</li>
@@ -102,7 +102,7 @@
                   <li>AWS</li>
                 </ul>
               </div>
-              <div class="col-7 col-sm-4">
+              <div class="col-6 col-sm-4">
                 <ul>
                   <li>VueJs</li>
                   <li>Wordpress</li>
@@ -119,7 +119,7 @@
               <div class="col-12 text-center">
                 <h2>I have many passions</h2>
                 <div>
-                  <p>My family, music, bikes, and cars, to name a few.</p>
+                  <p>My family, music, cars, bikes, to name a few.</p>
                 </div>
               </div>
             </div>

@@ -18051,7 +18051,9 @@ var render = function() {
                         _c("div", { staticClass: "row" }, [
                           _c(
                             "div",
-                            { staticClass: "col-5 col-sm-4 offset-sm-3" },
+                            {
+                              staticClass: "col-5 col-sm-4 offset-1 offset-sm-3"
+                            },
                             [
                               _c("ul", [
                                 _c("li", [_vm._v("PHP")]),
@@ -18067,7 +18069,7 @@ var render = function() {
                             ]
                           ),
                           _vm._v(" "),
-                          _c("div", { staticClass: "col-7 col-sm-4" }, [
+                          _c("div", { staticClass: "col-6 col-sm-4" }, [
                             _c("ul", [
                               _c("li", [_vm._v("VueJs")]),
                               _vm._v(" "),
@@ -18092,7 +18094,7 @@ var render = function() {
                           _c("div", [
                             _c("p", [
                               _vm._v(
-                                "My family, music, bikes, and cars, to name a few."
+                                "My family, music, cars, bikes, to name a few."
                               )
                             ])
                           ])

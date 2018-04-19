@@ -2,9 +2,6 @@
   .name-wrapper {
     margin-top: -20vh;
   }
-  .main-section-wrapper {
-    padding-top: 70vh;
-  }
   .scroll-wrapper {
     bottom: 18vh;
   }
@@ -96,16 +93,13 @@
     }
   }
   .name-wrapper {
-    margin-top: 15vh;
+    bottom: 75vh;
   }
   .scroll-wrapper {
     bottom: 5vh;
   }
-  .main-section-wrapper {
-    padding-top: 10vh;
-  }
 }
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xs) {
   @include mobile-styles();
 }
 @media(max-height: 575px) {

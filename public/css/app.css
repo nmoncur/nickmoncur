@@ -10080,10 +10080,6 @@ nav.header .social img {
   margin-top: -20vh;
 }
 
-.home .main-section-wrapper {
-  padding-top: 70vh;
-}
-
 .home .scroll-wrapper {
   bottom: 18vh;
 }
@@ -10183,21 +10179,17 @@ nav.header .social img {
   padding-bottom: 75px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .dev .scroll-wrapper {
     bottom: 45vh;
   }
 
   .name-wrapper {
-    margin-top: 15vh;
+    bottom: 75vh;
   }
 
   .scroll-wrapper {
     bottom: 5vh;
-  }
-
-  .main-section-wrapper {
-    padding-top: 10vh;
   }
 }
 
@@ -10207,15 +10199,11 @@ nav.header .social img {
   }
 
   .name-wrapper {
-    margin-top: 15vh;
+    bottom: 75vh;
   }
 
   .scroll-wrapper {
     bottom: 5vh;
-  }
-
-  .main-section-wrapper {
-    padding-top: 10vh;
   }
 }
 
