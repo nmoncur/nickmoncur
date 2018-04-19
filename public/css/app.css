@@ -10077,7 +10077,7 @@ nav.header .social img {
 }
 
 .home .name-wrapper {
-  margin-top: -20vh;
+  bottom: 50vh;
 }
 
 .home .scroll-wrapper {
@@ -10103,7 +10103,7 @@ nav.header .social img {
 }
 
 .name-wrapper {
-  bottom: 50vh;
+  bottom: 75vh;
   position: absolute;
   z-index: 1;
 }
@@ -10185,11 +10185,15 @@ nav.header .social img {
   }
 
   .name-wrapper {
-    bottom: 75vh;
+    bottom: 75vh !important;
   }
 
   .scroll-wrapper {
     bottom: 5vh;
+  }
+
+  .main-section-wrapper {
+    padding-top: 75vh;
   }
 }
 
@@ -10199,11 +10203,15 @@ nav.header .social img {
   }
 
   .name-wrapper {
-    bottom: 75vh;
+    bottom: 75vh !important;
   }
 
   .scroll-wrapper {
     bottom: 5vh;
+  }
+
+  .main-section-wrapper {
+    padding-top: 75vh;
   }
 }
 
