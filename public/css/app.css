@@ -10107,8 +10107,8 @@ nav.header .social img {
 }
 
 .name-wrapper {
-  margin-top: -50vh;
-  position: relative;
+  bottom: 50vh;
+  position: absolute;
   z-index: 1;
 }
 
@@ -10146,7 +10146,7 @@ nav.header .social img {
 
 .main-section-wrapper {
   overflow: hidden;
-  padding-top: 90vh;
+  padding-top: 50vh;
   position: relative;
   z-index: 10;
 }

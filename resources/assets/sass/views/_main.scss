@@ -24,8 +24,8 @@
   min-height: 75vh;
 }
 .name-wrapper {
-  margin-top: -50vh;
-  position: relative;
+  bottom: 50vh;
+  position: absolute;
   z-index: 1;
   h1 {
     position: fixed;
@@ -56,7 +56,7 @@
 }
 .main-section-wrapper {
   overflow: hidden;
-  padding-top: 90vh;
+  padding-top: 50vh;
   position: relative;
   z-index: 10;
   .main-section {
