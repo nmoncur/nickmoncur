@@ -10,27 +10,23 @@
           />
         </div>
 
-        <div class="name-wrapper">
+        <div class="top-text-wrapper row text-center">
           <h1>Hi there,<br class="d-sm-none"> I'm Nick Moncur</h1>
-        </div>
 
-        <transition name="fade">
-          <div v-show="textShow">
-            <div class="scroll-wrapper">
-              <div class="row">
-                <div class="text-center col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-                  <p>I'm a Web Developer. I am passionate about helping startups, small businesses,
-                    and people with ideas create their vision.</p>
-
-                  <p>Scroll down to learn more about me and my work.</p>
-                </div>
-                <div class="col-sm-12">
-                  <img class="icon" src="/icons/arrow-down.png">
-                </div>
-              </div>
+          <div :class="{ hide: textHide }" class="scroll-wrapper">
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+              <p>I'm a Web Developer. I am passionate about helping startups, small businesses,
+                and people with ideas create their vision.</p>
+              <br>
+              <p>Scroll down to learn more about me and my work.</p>
             </div>
+              <div class="icon">
+                <transition name="fade">
+                  <img v-show="!textHide" src="/icons/arrow-down.png" alt="">
+                </transition>
+              </div>
           </div>
-        </transition>
+        </div>
 
         <div class="main-section-wrapper">
 
@@ -167,12 +163,12 @@
     data() {
       return {
         siteShow: false,
-        textShow: false,
+        textHide: true,
       }
     },
     mounted() {
       this.siteShow = true
-      setTimeout(() => (this.textShow = true), 2000)
+      setTimeout(() => (this.textHide = false), 2000)
     },
     components: {
       ContactForm

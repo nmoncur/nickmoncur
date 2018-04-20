@@ -16561,9 +16561,11 @@ var render = function() {
                     staticClass: "d-none d-sm-block col-6 text-center nav-links"
                   },
                   [
-                    _c("router-link", { attrs: { to: "/" } }, [
-                      _vm._v("Nick Moncur")
-                    ])
+                    _c(
+                      "router-link",
+                      { staticClass: "name", attrs: { to: "/" } },
+                      [_vm._v("Nick Moncur")]
+                    )
                   ],
                   1
                 ),
@@ -16911,19 +16913,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -17012,7 +17001,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       var _this = this;
 
       __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/contact', this.form).then(function () {
-        _this.message = 'Form submitted successfully!';
+        _this.message = 'Thanks for reaching out! Look for an email from me in few minutes.';
       }).catch(function () {
         _this.message = 'Form submission failed. Name and email are required';
       });
@@ -17235,92 +17224,68 @@ var render = function() {
     { staticClass: "dev" },
     [
       _c("transition", { attrs: { name: "fade" } }, [
-        _c(
-          "div",
-          { staticClass: "top" },
-          [
-            _c(
-              "div",
-              { staticClass: "image-wrapper" },
-              [
-                _c("progressive-img", {
-                  attrs: {
-                    src: "/images/dev.jpg",
-                    placeholder: "/images/dev-load.jpg"
-                  }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "name-wrapper" }, [
-              _c("h1", [
-                _vm._v("Will code for..."),
-                _c("br", { staticClass: "d-block d-sm-none" }),
-                _vm._v("subscription?")
-              ])
+        _c("div", [
+          _c(
+            "div",
+            { staticClass: "image-wrapper" },
+            [
+              _c("progressive-img", {
+                attrs: {
+                  src: "/images/dev.jpg",
+                  placeholder: "/images/dev-load.jpg"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "top-text-wrapper row text-center" }, [
+            _c("h1", [
+              _vm._v("Will code for..."),
+              _c("br", { staticClass: "d-block d-sm-none" }),
+              _vm._v("subscription?")
             ]),
             _vm._v(" "),
-            _c("transition", { attrs: { name: "fade" } }, [
-              _c(
-                "div",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.textShow,
-                      expression: "textShow"
-                    }
-                  ]
-                },
-                [
-                  _c("div", { staticClass: "scroll-wrapper" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "text-center col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3"
-                        },
-                        [
-                          _c("p", { staticClass: "bold" }, [
-                            _vm._v(
-                              "My mission is to help hundreds of small businesses by eliminating the up-front cost of having a website built."
-                            )
-                          ])
-                        ]
+            _c(
+              "div",
+              { staticClass: "scroll-wrapper", class: { hide: _vm.textHide } },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3"
+                  },
+                  [
+                    _c("p", { staticClass: "bold" }, [
+                      _vm._v(
+                        "My mission is to help hundreds of small businesses by eliminating the up-front cost of having a website built."
                       )
                     ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "cta-wrapper" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "text-center" }, [
-                        _c(
-                          "div",
-                          {
-                            directives: [
-                              {
-                                name: "scroll-to",
-                                rawName: "v-scroll-to",
-                                value: "#contact",
-                                expression: "'#contact'"
-                              }
-                            ],
-                            staticClass: "btn btn-primary"
-                          },
-                          [_vm._v("Get in touch")]
-                        )
-                      ])
-                    ])
-                  ])
-                ]
-              )
-            ])
-          ],
-          1
-        )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "cta-wrapper" }, [
+                  _c(
+                    "div",
+                    {
+                      directives: [
+                        {
+                          name: "scroll-to",
+                          rawName: "v-scroll-to",
+                          value: "#contact",
+                          expression: "'#contact'"
+                        }
+                      ],
+                      staticClass: "btn btn-primary"
+                    },
+                    [_vm._v("Get in touch")]
+                  )
+                ])
+              ]
+            )
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c(
@@ -17724,10 +17689,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 
 
@@ -17735,7 +17696,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       siteShow: false,
-      textShow: false
+      textHide: true
     };
   },
   mounted: function mounted() {
@@ -17743,7 +17704,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     this.siteShow = true;
     setTimeout(function () {
-      return _this.textShow = true;
+      return _this.textHide = false;
     }, 2000);
   },
 
@@ -17766,399 +17727,393 @@ var render = function() {
     [
       _c("transition", { attrs: { name: "fade" } }, [
         _vm.siteShow
-          ? _c(
-              "div",
-              [
-                _c(
-                  "div",
-                  { staticClass: "image-wrapper" },
-                  [
-                    _c("progressive-img", {
-                      attrs: {
-                        src: "/images/main.jpg",
-                        placeholder: "/images/main-load.jpg"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "name-wrapper" }, [
-                  _c("h1", [
-                    _vm._v("Hi there,"),
-                    _c("br", { staticClass: "d-sm-none" }),
-                    _vm._v(" I'm Nick Moncur")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("transition", { attrs: { name: "fade" } }, [
-                  _c(
-                    "div",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: _vm.textShow,
-                          expression: "textShow"
-                        }
-                      ]
-                    },
-                    [
-                      _c("div", { staticClass: "scroll-wrapper" }, [
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "text-center col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3"
-                            },
-                            [
-                              _c("p", [
-                                _vm._v(
-                                  "I'm a Web Developer. I am passionate about helping startups, small businesses,\n                  and people with ideas create their vision."
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("p", [
-                                _vm._v(
-                                  "Scroll down to learn more about me and my work."
-                                )
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-12" }, [
-                            _c("img", {
-                              staticClass: "icon",
-                              attrs: { src: "/icons/arrow-down.png" }
-                            })
-                          ])
-                        ])
-                      ])
-                    ]
-                  )
+          ? _c("div", [
+              _c(
+                "div",
+                { staticClass: "image-wrapper" },
+                [
+                  _c("progressive-img", {
+                    attrs: {
+                      src: "/images/main.jpg",
+                      placeholder: "/images/main-load.jpg"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "top-text-wrapper row text-center" }, [
+                _c("h1", [
+                  _vm._v("Hi there,"),
+                  _c("br", { staticClass: "d-sm-none" }),
+                  _vm._v(" I'm Nick Moncur")
                 ]),
                 _vm._v(" "),
                 _c(
                   "div",
-                  { staticClass: "main-section-wrapper" },
+                  {
+                    staticClass: "scroll-wrapper",
+                    class: { hide: _vm.textHide }
+                  },
                   [
                     _c(
-                      "progressive-background",
+                      "div",
                       {
-                        staticClass: "main-section fixed",
-                        attrs: {
-                          src: "/images/web.jpg",
-                          placeholde: "/images/web-load.jpg"
-                        }
+                        staticClass:
+                          "col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3"
                       },
                       [
-                        _c("div", { staticClass: "container" }, [
-                          _c("div", { staticClass: "row" }, [
+                        _c("p", [
+                          _vm._v(
+                            "I'm a Web Developer. I am passionate about helping startups, small businesses,\n              and people with ideas create their vision."
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "Scroll down to learn more about me and my work."
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "icon" },
+                      [
+                        _c("transition", { attrs: { name: "fade" } }, [
+                          _c("img", {
+                            directives: [
+                              {
+                                name: "show",
+                                rawName: "v-show",
+                                value: !_vm.textHide,
+                                expression: "!textHide"
+                              }
+                            ],
+                            attrs: { src: "/icons/arrow-down.png", alt: "" }
+                          })
+                        ])
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "main-section-wrapper" },
+                [
+                  _c(
+                    "progressive-background",
+                    {
+                      staticClass: "main-section fixed",
+                      attrs: {
+                        src: "/images/web.jpg",
+                        placeholde: "/images/web-load.jpg"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "container" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-12 text-center" }, [
+                            _c("h2", [
+                              _vm._v("I build websites for small subscriptions")
+                            ]),
+                            _vm._v(" "),
                             _c(
                               "div",
-                              { staticClass: "col-sm-12 text-center" },
+                              {
+                                staticClass:
+                                  "col-sm-10 offset-sm-1 col-md-8 offset-md-2"
+                              },
                               [
-                                _c("h2", [
-                                  _vm._v(
-                                    "I build websites for small subscriptions"
-                                  )
-                                ]),
-                                _vm._v(" "),
                                 _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "col-sm-10 offset-sm-1 col-md-8 offset-md-2"
-                                  },
+                                  "p",
                                   [
                                     _c(
-                                      "p",
-                                      [
-                                        _c(
-                                          "router-link",
-                                          { attrs: { to: "/dev" } },
-                                          [_vm._v("Click here")]
-                                        ),
-                                        _vm._v(
-                                          " if you're interested in learning more.\n                  "
-                                        )
-                                      ],
-                                      1
+                                      "router-link",
+                                      { attrs: { to: "/dev" } },
+                                      [_vm._v("Click here")]
+                                    ),
+                                    _vm._v(
+                                      " if you're interested in learning more.\n                  "
                                     )
-                                  ]
+                                  ],
+                                  1
                                 )
                               ]
                             )
                           ])
                         ])
-                      ]
-                    ),
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "main-section" }, [
+                    _c("div", { staticClass: "text-center" }, [
+                      _c("div", [_c("h2", [_vm._v("I've got experience")])]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-sm-6 offset-sm-3" }, [
+                        _c("p", [
+                          _vm._v(
+                            "My portfolio is constantly growing! I've been developing websites and applications since 2013."
+                          )
+                        ])
+                      ])
+                    ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "main-section" }, [
+                    _c("div", { staticClass: "projects" }, [
+                      _c("div", { staticClass: "container" }, [
+                        _c("div", { staticClass: "row text-center" }, [
+                          _c("div", { staticClass: "col-sm-4" }, [
+                            _c("div", { staticClass: "img-wrapper" }, [
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    href: "http://clearbackflow.com",
+                                    target: "_blank"
+                                  }
+                                },
+                                [
+                                  _c("img", {
+                                    attrs: {
+                                      src: "/images/clear.png",
+                                      alt: "Clear Backflow Services"
+                                    }
+                                  })
+                                ]
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-4" }, [
+                            _c("div", { staticClass: "img-wrapper" }, [
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    href: "http://tactick.com",
+                                    target: "_blank"
+                                  }
+                                },
+                                [
+                                  _c("img", {
+                                    attrs: {
+                                      src: "/images/tactick.png",
+                                      alt: "Tactick"
+                                    }
+                                  })
+                                ]
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-4" }, [
+                            _c("div", { staticClass: "img-wrapper" }, [
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    href: "http://mezzo.tykesandtunes.com",
+                                    target: "_blank"
+                                  }
+                                },
+                                [
+                                  _c("img", {
+                                    attrs: {
+                                      src: "/images/mezzo.png",
+                                      alt: "Mezzo"
+                                    }
+                                  })
+                                ]
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-6" }, [
+                            _c("div", { staticClass: "img-wrapper" }, [
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    href: "http://kasimillerdesigns.com",
+                                    target: "_blank"
+                                  }
+                                },
+                                [
+                                  _c("img", {
+                                    attrs: {
+                                      src: "/images/kmd.png",
+                                      alt: "Kasi Miller Designs"
+                                    }
+                                  })
+                                ]
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-6" }, [
+                            _c("div", { staticClass: "img-wrapper" }, [
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    href: "https://depthinteractive.com",
+                                    target: "_blank"
+                                  }
+                                },
+                                [
+                                  _c("img", {
+                                    attrs: {
+                                      src: "/images/depth.png",
+                                      alt: "Depth Interactive"
+                                    }
+                                  })
+                                ]
+                              )
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "progressive-background",
+                    {
+                      staticClass: "main-section fixed",
+                      attrs: {
+                        src: "/images/skills.jpg",
+                        placeholder: "/images/skills-load.jpg"
+                      }
+                    },
+                    [
                       _c("div", { staticClass: "text-center" }, [
-                        _c("div", [_c("h2", [_vm._v("I've got experience")])]),
+                        _c("div", [_c("h2", [_vm._v("I've got skills")])]),
                         _vm._v(" "),
                         _c("div", { staticClass: "col-sm-6 offset-sm-3" }, [
                           _c("p", [
                             _vm._v(
-                              "My portfolio is constantly growing! I've been developing websites and applications since 2013."
+                              "I have a knack for self-learning. From saxophone to VueJs, I've found I can learn and do anything I commit to."
                             )
                           ])
                         ])
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "projects" }, [
-                        _c("div", { staticClass: "container" }, [
-                          _c("div", { staticClass: "row text-center" }, [
-                            _c("div", { staticClass: "col-sm-4" }, [
-                              _c("div", { staticClass: "img-wrapper" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href: "http://clearbackflow.com",
-                                      target: "_blank"
-                                    }
-                                  },
-                                  [
-                                    _c("img", {
-                                      attrs: {
-                                        src: "/images/clear.png",
-                                        alt: "Clear Backflow Services"
-                                      }
-                                    })
-                                  ]
-                                )
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-4" }, [
-                              _c("div", { staticClass: "img-wrapper" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href: "http://tactick.com",
-                                      target: "_blank"
-                                    }
-                                  },
-                                  [
-                                    _c("img", {
-                                      attrs: {
-                                        src: "/images/tactick.png",
-                                        alt: "Tactick"
-                                      }
-                                    })
-                                  ]
-                                )
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-4" }, [
-                              _c("div", { staticClass: "img-wrapper" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href: "http://mezzo.tykesandtunes.com",
-                                      target: "_blank"
-                                    }
-                                  },
-                                  [
-                                    _c("img", {
-                                      attrs: {
-                                        src: "/images/mezzo.png",
-                                        alt: "Mezzo"
-                                      }
-                                    })
-                                  ]
-                                )
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-6" }, [
-                              _c("div", { staticClass: "img-wrapper" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href: "http://kasimillerdesigns.com",
-                                      target: "_blank"
-                                    }
-                                  },
-                                  [
-                                    _c("img", {
-                                      attrs: {
-                                        src: "/images/kmd.png",
-                                        alt: "Kasi Miller Designs"
-                                      }
-                                    })
-                                  ]
-                                )
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-6" }, [
-                              _c("div", { staticClass: "img-wrapper" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href: "https://depthinteractive.com",
-                                      target: "_blank"
-                                    }
-                                  },
-                                  [
-                                    _c("img", {
-                                      attrs: {
-                                        src: "/images/depth.png",
-                                        alt: "Depth Interactive"
-                                      }
-                                    })
-                                  ]
-                                )
-                              ])
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "col-5 col-sm-4 offset-1 offset-sm-3"
+                          },
+                          [
+                            _c("ul", [
+                              _c("li", [_vm._v("PHP")]),
+                              _vm._v(" "),
+                              _c("li", [_vm._v("Laravel")]),
+                              _vm._v(" "),
+                              _c("li", [_vm._v("OctoberCMS")]),
+                              _vm._v(" "),
+                              _c("li", [_vm._v("Sass/Css")]),
+                              _vm._v(" "),
+                              _c("li", [_vm._v("AWS")])
                             ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-6 col-sm-4" }, [
+                          _c("ul", [
+                            _c("li", [_vm._v("VueJs")]),
+                            _vm._v(" "),
+                            _c("li", [_vm._v("Wordpress")]),
+                            _vm._v(" "),
+                            _c("li", [_vm._v("Square/Recurly API's")]),
+                            _vm._v(" "),
+                            _c("li", [_vm._v("Fat-Free Framework")]),
+                            _vm._v(" "),
+                            _c("li", [_vm._v("Github/Bitbucket")])
+                          ])
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "main-section" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-12 text-center" }, [
+                        _c("h2", [_vm._v("I have many passions")]),
+                        _vm._v(" "),
+                        _c("div", [
+                          _c("p", [
+                            _vm._v(
+                              "My family, music, cars, bikes, to name a few."
+                            )
                           ])
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c(
-                      "progressive-background",
-                      {
-                        staticClass: "main-section fixed",
-                        attrs: {
-                          src: "/images/skills.jpg",
-                          placeholder: "/images/skills-load.jpg"
-                        }
-                      },
+                      "div",
+                      { staticClass: "row text-center" },
                       [
-                        _c("div", { staticClass: "text-center" }, [
-                          _c("div", [_c("h2", [_vm._v("I've got skills")])]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-6 offset-sm-3" }, [
-                            _c("p", [
-                              _vm._v(
-                                "I have a knack for self-learning. From saxophone to VueJs, I've found I can learn and do anything I commit to."
-                              )
-                            ])
-                          ])
-                        ]),
+                        _c("progressive-background", {
+                          staticClass: "col-sm-4 image",
+                          attrs: {
+                            src: "/images/moto.jpg",
+                            placeholder: "/images/moto-load.jpg"
+                          }
+                        }),
                         _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass: "col-5 col-sm-4 offset-1 offset-sm-3"
-                            },
-                            [
-                              _c("ul", [
-                                _c("li", [_vm._v("PHP")]),
-                                _vm._v(" "),
-                                _c("li", [_vm._v("Laravel")]),
-                                _vm._v(" "),
-                                _c("li", [_vm._v("OctoberCMS")]),
-                                _vm._v(" "),
-                                _c("li", [_vm._v("Sass/Css")]),
-                                _vm._v(" "),
-                                _c("li", [_vm._v("AWS")])
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-6 col-sm-4" }, [
-                            _c("ul", [
-                              _c("li", [_vm._v("VueJs")]),
-                              _vm._v(" "),
-                              _c("li", [_vm._v("Wordpress")]),
-                              _vm._v(" "),
-                              _c("li", [_vm._v("Square/Recurly API's")]),
-                              _vm._v(" "),
-                              _c("li", [_vm._v("Fat-Free Framework")]),
-                              _vm._v(" "),
-                              _c("li", [_vm._v("Github/Bitbucket")])
-                            ])
-                          ])
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "main-section" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-12 text-center" }, [
-                          _c("h2", [_vm._v("I have many passions")]),
-                          _vm._v(" "),
-                          _c("div", [
-                            _c("p", [
-                              _vm._v(
-                                "My family, music, cars, bikes, to name a few."
-                              )
-                            ])
-                          ])
-                        ])
-                      ]),
+                        _c("progressive-background", {
+                          staticClass: "col-sm-4 image",
+                          attrs: {
+                            src: "/images/family.jpg",
+                            placeholder: "/images/family-load.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("progressive-background", {
+                          staticClass: "col-sm-4 image",
+                          attrs: {
+                            src: "/images/piano.jpg",
+                            placeholder: "/images/piano-load.jpg"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "main-section" }, [
+                    _c("div", { staticClass: "text-center" }, [
+                      _c("div", [_c("h2", [_vm._v("I'd love to chat")])]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "row text-center" },
-                        [
-                          _c("progressive-background", {
-                            staticClass: "col-sm-4 image",
-                            attrs: {
-                              src: "/images/moto.jpg",
-                              placeholder: "/images/moto-load.jpg"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("progressive-background", {
-                            staticClass: "col-sm-4 image",
-                            attrs: {
-                              src: "/images/family.jpg",
-                              placeholder: "/images/family-load.jpg"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("progressive-background", {
-                            staticClass: "col-sm-4 image",
-                            attrs: {
-                              src: "/images/piano.jpg",
-                              placeholder: "/images/piano-load.jpg"
-                            }
-                          })
-                        ],
-                        1
-                      )
+                      _c("div", { staticClass: "col-sm-6 offset-sm-3" }, [
+                        _c("p", [
+                          _vm._v(
+                            "Fill out the form below to reach me. I welcome any project inquiries or other questions."
+                          )
+                        ])
+                      ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "main-section" }, [
-                      _c("div", { staticClass: "text-center" }, [
-                        _c("div", [_c("h2", [_vm._v("I'd love to chat")])]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-sm-6 offset-sm-3" }, [
-                          _c("p", [
-                            _vm._v(
-                              "Fill out the form below to reach me. I welcome any project inquiries or other questions."
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-sm-6 offset-sm-3 contact-form" },
-                        [_c("contact-form")],
-                        1
-                      )
-                    ])
-                  ],
-                  1
-                )
-              ],
-              1
-            )
+                    _c(
+                      "div",
+                      { staticClass: "col-sm-6 offset-sm-3 contact-form" },
+                      [_c("contact-form")],
+                      1
+                    )
+                  ])
+                ],
+                1
+              )
+            ])
           : _vm._e()
       ])
     ],

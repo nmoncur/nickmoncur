@@ -2,7 +2,7 @@
   <div class="dev">
 
     <transition name="fade">
-      <div class="top">
+      <div>
         <div class="image-wrapper">
           <progressive-img
             src="/images/dev.jpg"
@@ -10,32 +10,19 @@
           />
         </div>
 
-        <div class="name-wrapper">
+        <div class="top-text-wrapper row text-center">
           <h1>Will code for...<br class="d-block d-sm-none">subscription?</h1>
-        </div>
 
-        <transition name="fade">
-          <div v-show="textShow">
-
-            <div class="scroll-wrapper">
-              <div class="row">
-                <div class="text-center col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-                  <p class="bold">My mission is to help hundreds of small businesses by eliminating the up-front cost of having a website built.</p>
-                </div>
-              </div>
+          <div :class="{ hide: textHide }" class="scroll-wrapper">
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+              <p class="bold">My mission is to help hundreds of small businesses by eliminating the up-front cost of having a website built.</p>
             </div>
 
             <div class="cta-wrapper">
-              <div class="row">
-                <div class="text-center">
-                  <div v-scroll-to="'#contact'" class="btn btn-primary">Get in touch</div>
-                </div>
-              </div>
+              <div v-scroll-to="'#contact'" class="btn btn-primary">Get in touch</div>
             </div>
-
           </div>
-        </transition>
-
+        </div>
       </div>
     </transition>
     <div class="main-section-wrapper">

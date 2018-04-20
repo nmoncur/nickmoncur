@@ -10041,12 +10041,17 @@ a:hover {
 
 html,
 body {
+  background-color: #F5F9FB;
   color: #22313F;
 }
 
 html #app,
 body #app {
   min-height: 100%;
+}
+
+.hide {
+  opacity: 0 !important;
 }
 
 [v-cloak] {
@@ -10076,16 +10081,12 @@ nav.header .social img {
   max-height: 20px;
 }
 
-.home .name-wrapper {
-  bottom: 50vh;
-}
-
-.home .scroll-wrapper {
-  bottom: 18vh;
+nav.header .name {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .image-wrapper {
-  position: relative;
+  position: absolute;
   z-index: 0;
 }
 
@@ -10098,51 +10099,44 @@ nav.header .social img {
   top: 0;
 }
 
-.top {
-  min-height: 75vh;
-}
-
-.name-wrapper {
-  bottom: 75vh;
-  position: absolute;
+.top-text-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  position: relative;
   z-index: 1;
 }
 
-.name-wrapper h1 {
-  position: fixed;
-  text-align: center;
-  width: 100%;
+.top-text-wrapper h1 {
+  margin-bottom: -35vh;
+  word-break: break-all;
 }
 
-.scroll-wrapper {
-  bottom: 45vh;
-  opacity: 0.5;
-  position: fixed;
-  width: 100%;
-  text-align: center;
+.top-text-wrapper .scroll-wrapper {
+  margin-top: -20vh;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
-.scroll-wrapper .icon {
+.top-text-wrapper .scroll-wrapper .icon img {
   height: 15px;
+  position: absolute;
 }
 
-.scroll-wrapper img {
-  margin-bottom: 5px;
-}
-
-.cta-wrapper {
-  bottom: 25vh;
-  position: fixed;
-  width: 100%;
-}
-
-.cta-wrapper div {
-  margin: 0 auto;
+.top-text-wrapper .scroll-wrapper .cta-wrapper {
+  margin-top: 25px;
 }
 
 .main-section-wrapper {
   overflow: hidden;
-  padding-top: 50vh;
   position: relative;
   z-index: 10;
 }
@@ -10180,38 +10174,22 @@ nav.header .social img {
 }
 
 @media (max-width: 575.98px) {
-  .dev .scroll-wrapper {
-    bottom: 45vh;
+  .top-text-wrapper h1 {
+    margin: 0 !important;
   }
 
-  .name-wrapper {
-    bottom: 75vh !important;
-  }
-
-  .scroll-wrapper {
-    bottom: 5vh;
-  }
-
-  .main-section-wrapper {
-    padding-top: 75vh;
+  .top-text-wrapper .scroll-wrapper {
+    margin: 0 !important;
   }
 }
 
-@media (max-height: 575px) {
-  .dev .scroll-wrapper {
-    bottom: 45vh;
+@media (max-height: 350px) {
+  .top-text-wrapper h1 {
+    margin: 0 !important;
   }
 
-  .name-wrapper {
-    bottom: 75vh !important;
-  }
-
-  .scroll-wrapper {
-    bottom: 5vh;
-  }
-
-  .main-section-wrapper {
-    padding-top: 75vh;
+  .top-text-wrapper .scroll-wrapper {
+    margin: 0 !important;
   }
 }
 

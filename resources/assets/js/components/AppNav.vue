@@ -13,7 +13,7 @@
               <a href="https://medium.com/@nickmoncur" target="_blank"><img src="/images/social/medium.png" alt=""></a>
             </div>
             <div class="d-none d-sm-block col-6 text-center nav-links">
-              <router-link to="/">Nick Moncur</router-link>
+              <router-link to="/" class="name">Nick Moncur</router-link>
             </div>
             <div class="col-5 col-sm-3 text-right nav-links">
               <router-link to="/dev">Hire Me</router-link>
