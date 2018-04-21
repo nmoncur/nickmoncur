@@ -69,7 +69,7 @@
                     <div class="img-wrapper"><a href="http://mezzo.tykesandtunes.com" target="_blank"><img src="/images/mezzo.png" alt="Mezzo"></a></div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="img-wrapper"><a href="http://kasimillerdesigns.com" target="_blank"><img src="/images/kmd.png" alt="Kasi Miller Designs"></a></div>
+                    <div class="img-wrapper"><a href="http://kmd.nickmoncur.com" target="_blank"><img src="/images/kmd.png" alt="Kasi Miller Designs"></a></div>
                   </div>
                   <div class="col-sm-6">
                     <div class="img-wrapper"><a href="https://depthinteractive.com" target="_blank"><img src="/images/depth.png" alt="Depth Interactive"></a></div>
