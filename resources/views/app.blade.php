@@ -26,10 +26,10 @@
 
   <!-- Open Graph data -->
   <meta property="og:url" content="{{ Request::url() }}">
-  <meta property="og:title" content="Nick Moncur" />
-  <meta property="og:description" content="I'm passionate about helping startups and small business. Visit my site to learn about my work." />
+  <meta property="og:title" content="Nick Moncur">
+  <meta property="og:description" content="I'm passionate about helping startups and small business. Visit my site to learn about my work.">
   <meta property="og:site_name" content="NickMoncur.com">
-  <meta property="og:image" content="http://nickmoncur.com/images/main.jpg" />
+  <meta property="og:image" content="http://nickmoncur.com/images/main.jpg">
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:domain" value="{{ Request::url() }}">
