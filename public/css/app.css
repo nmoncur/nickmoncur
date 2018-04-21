@@ -10126,6 +10126,15 @@ nav.header .name {
   transition: opacity 1s ease-in-out;
 }
 
+.top-text-wrapper .scroll-wrapper .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .top-text-wrapper .scroll-wrapper .icon img {
   height: 15px;
   position: absolute;

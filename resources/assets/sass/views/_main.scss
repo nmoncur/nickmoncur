@@ -25,6 +25,8 @@
     opacity: 1;
     transition: opacity 1s ease-in-out;
     .icon {
+      display: flex;
+      justify-content: center;
       img {
         height: 15px;
         position: absolute;

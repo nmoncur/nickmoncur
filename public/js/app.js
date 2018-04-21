@@ -17001,7 +17001,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       var _this = this;
 
       __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/contact', this.form).then(function () {
-        _this.message = 'Thanks for reaching out! Look for an email from me in few minutes.';
+        _this.message = 'Thanks for reaching out! Look for an email from me in a few minutes.';
       }).catch(function () {
         _this.message = 'Form submission failed. Name and email are required';
       });
