@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        \FoxxMD\LaravelElasticBeanstalkCron\ElasticBeanstalkCronProvider::class,
 
         /*
          * Application Service Providers...
