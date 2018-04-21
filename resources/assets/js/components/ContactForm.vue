@@ -53,7 +53,7 @@
     methods: {
       submitForm() {
         axios.post('/contact', this.form)
-          .then(() => { this.message = 'Thanks for reaching out! Look for an email from me in few minutes.' })
+          .then(() => { this.message = 'Thanks for reaching out! Look for an email from me in a few minutes.' })
           .catch(() => { this.message = 'Form submission failed. Name and email are required' })
       }
     }
