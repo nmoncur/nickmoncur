@@ -4,19 +4,20 @@
       <div v-if="siteShow">
 
         <div class="image-wrapper">
-          <progressive-img
+          <progressive-background
+            class="fixed"
             src="/images/main.jpg"
             placeholder="/images/main-load.jpg"
           />
         </div>
 
         <div class="top-text-wrapper row text-center">
-          <h1>Hi there,<br class="d-sm-none"> I'm Nick Moncur</h1>
+          <h1>Hi there, I'm Nick Moncur</h1>
 
           <div :class="{ hide: textHide }" class="scroll-wrapper">
-            <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+            <div class="col-10 offset-1 col-sm-8 offset-sm-2">
               <p>I'm a Web Developer. I am passionate about helping startups, small businesses,
-                and people with ideas create their vision.</p>
+                and people see their vision come alive online.</p>
               <br>
               <p>Scroll down to learn more about me and my work.</p>
             </div>
@@ -140,13 +141,15 @@
 
           <div class="main-section">
             <div class="text-center">
-              <div><h2>I'd love to chat</h2></div>
-              <div class="col-sm-6 offset-sm-3">
-                <p>Fill out the form below to reach me. I welcome any project inquiries or other questions.</p>
+              <div><h2>I'd love to work with you</h2></div>
+              <div class="col-sm-6 offset-sm-3 col-md-4 offset-md-4">
+                <p>Check out my freelance page to get in touch. I welcome any project inquiries or other questions.</p>
+                <router-link to="/dev">
+                  <div class="btn btn-primary">
+                    Hire Me
+                  </div>
+                </router-link>
               </div>
-            </div>
-            <div class="col-sm-6 offset-sm-3 contact-form">
-              <contact-form/>
             </div>
           </div>
 

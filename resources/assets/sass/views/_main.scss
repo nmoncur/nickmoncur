@@ -1,12 +1,16 @@
 .image-wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
   position: absolute;
   z-index: 0;
-  img, .progressive-image-placeholder {
+  div {
     height: 100vh;
     min-width: 100vw;
-    opacity: 0.5;
-    position: fixed;
-    top: 0;
+  }
+  .fixed {
+    div {
+      background: fixed center / cover;
+    }
   }
 }
 .top-text-wrapper {
@@ -18,7 +22,6 @@
   z-index: 1;
   h1 {
     margin-bottom: -35vh;
-    word-break: break-all;
   }
   .scroll-wrapper {
     margin-top: -20vh;
@@ -45,7 +48,7 @@
     background-color: $body-bg;
     padding: 100px 0;
     position: relative;
-    div {
+    div:not(.btn) {
       padding-bottom: 0 !important;
     }
     &.fixed {

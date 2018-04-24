@@ -16442,6 +16442,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -16575,7 +16579,9 @@ var render = function() {
                   { staticClass: "col-5 col-sm-3 text-right nav-links" },
                   [
                     _c("router-link", { attrs: { to: "/dev" } }, [
-                      _vm._v("Hire Me")
+                      _c("div", { staticClass: "btn btn-primary" }, [
+                        _vm._v("\n                Hire Me\n              ")
+                      ])
                     ])
                   ],
                   1
@@ -17689,6 +17695,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -17732,7 +17741,8 @@ var render = function() {
                 "div",
                 { staticClass: "image-wrapper" },
                 [
-                  _c("progressive-img", {
+                  _c("progressive-background", {
+                    staticClass: "fixed",
                     attrs: {
                       src: "/images/main.jpg",
                       placeholder: "/images/main-load.jpg"
@@ -17743,11 +17753,7 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("div", { staticClass: "top-text-wrapper row text-center" }, [
-                _c("h1", [
-                  _vm._v("Hi there,"),
-                  _c("br", { staticClass: "d-sm-none" }),
-                  _vm._v(" I'm Nick Moncur")
-                ]),
+                _c("h1", [_vm._v("Hi there, I'm Nick Moncur")]),
                 _vm._v(" "),
                 _c(
                   "div",
@@ -17758,14 +17764,11 @@ var render = function() {
                   [
                     _c(
                       "div",
-                      {
-                        staticClass:
-                          "col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3"
-                      },
+                      { staticClass: "col-10 offset-1 col-sm-8 offset-sm-2" },
                       [
                         _c("p", [
                           _vm._v(
-                            "I'm a Web Developer. I am passionate about helping startups, small businesses,\n              and people with ideas create their vision."
+                            "I'm a Web Developer. I am passionate about helping startups, small businesses,\n              and people see their vision come alive online."
                           )
                         ]),
                         _vm._v(" "),
@@ -17941,7 +17944,7 @@ var render = function() {
                                 "a",
                                 {
                                   attrs: {
-                                    href: "http://kasimillerdesigns.com",
+                                    href: "http://kmd.nickmoncur.com",
                                     target: "_blank"
                                   }
                                 },
@@ -18092,23 +18095,34 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "main-section" }, [
                     _c("div", { staticClass: "text-center" }, [
-                      _c("div", [_c("h2", [_vm._v("I'd love to chat")])]),
+                      _c("div", [
+                        _c("h2", [_vm._v("I'd love to work with you")])
+                      ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "col-sm-6 offset-sm-3" }, [
-                        _c("p", [
-                          _vm._v(
-                            "Fill out the form below to reach me. I welcome any project inquiries or other questions."
-                          )
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-sm-6 offset-sm-3 contact-form" },
-                      [_c("contact-form")],
-                      1
-                    )
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "col-sm-6 offset-sm-3 col-md-4 offset-md-4"
+                        },
+                        [
+                          _c("p", [
+                            _vm._v(
+                              "Check out my freelance page to get in touch. I welcome any project inquiries or other questions."
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("router-link", { attrs: { to: "/dev" } }, [
+                            _c("div", { staticClass: "btn btn-primary" }, [
+                              _vm._v(
+                                "\n                  Hire Me\n                "
+                              )
+                            ])
+                          ])
+                        ],
+                        1
+                      )
+                    ])
                   ])
                 ],
                 1

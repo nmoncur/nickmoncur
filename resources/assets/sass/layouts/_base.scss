@@ -1,6 +1,7 @@
 html, body {
   background-color: $body-bg;
   color: $text-color;
+  overflow-x: hidden;
   #app {
     min-height: 100%;
   }

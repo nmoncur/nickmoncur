@@ -16,7 +16,11 @@
               <router-link to="/" class="name">Nick Moncur</router-link>
             </div>
             <div class="col-5 col-sm-3 text-right nav-links">
-              <router-link to="/dev">Hire Me</router-link>
+              <router-link to="/dev">
+                <div class="btn btn-primary">
+                  Hire Me
+                </div>
+              </router-link>
             </div>
             <div class="col-1 d-block d-sm-none"></div>
           </div>
