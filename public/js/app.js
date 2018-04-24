@@ -18035,11 +18035,11 @@ var render = function() {
                             _vm._v(" "),
                             _c("li", [_vm._v("Wordpress")]),
                             _vm._v(" "),
-                            _c("li", [_vm._v("Square/Recurly API's")]),
+                            _c("li", [_vm._v("Square / Recurly API's")]),
                             _vm._v(" "),
                             _c("li", [_vm._v("Fat-Free Framework")]),
                             _vm._v(" "),
-                            _c("li", [_vm._v("Github/Bitbucket")])
+                            _c("li", [_vm._v("Github / Bitbucket")])
                           ])
                         ])
                       ])
