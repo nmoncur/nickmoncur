@@ -103,9 +103,9 @@
                 <ul>
                   <li>VueJs</li>
                   <li>Wordpress</li>
-                  <li>Square/Recurly API's</li>
+                  <li>Square / Recurly API's</li>
                   <li>Fat-Free Framework</li>
-                  <li>Github/Bitbucket</li>
+                  <li>Github / Bitbucket</li>
                 </ul>
               </div>
             </div>
