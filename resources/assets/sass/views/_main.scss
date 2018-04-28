@@ -17,6 +17,8 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  margin: 0;
+  max-width: 100%;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -74,19 +76,23 @@
     padding-bottom: 75px;
   }
 }
-@mixin mobile-styles() {
+@include media-breakpoint-down(xs) {
   .top-text-wrapper {
     h1 {
-      margin: 0 !important;
+      margin-bottom: -15vh;
     }
     .scroll-wrapper {
-      margin: 0 !important;
+      margin-top: -15vh;
     }
   }
 }
-@include media-breakpoint-down(xs) {
-  @include mobile-styles();
-}
-@media(max-height: 350px) {
-  @include mobile-styles();
+@media(max-height: 400px) {
+  .top-text-wrapper {
+    h1 {
+      margin-bottom: 0 !important;
+    }
+    .scroll-wrapper {
+      margin-top: 0 !important;
+    }
+  }
 }

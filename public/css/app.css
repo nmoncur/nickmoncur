@@ -10120,6 +10120,8 @@ nav.header .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
+  max-width: 100%;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -10194,21 +10196,21 @@ nav.header .btn {
 
 @media (max-width: 575.98px) {
   .top-text-wrapper h1 {
-    margin: 0 !important;
+    margin-bottom: -15vh;
   }
 
   .top-text-wrapper .scroll-wrapper {
-    margin: 0 !important;
+    margin-top: -15vh;
   }
 }
 
-@media (max-height: 350px) {
+@media (max-height: 400px) {
   .top-text-wrapper h1 {
-    margin: 0 !important;
+    margin-bottom: 0 !important;
   }
 
   .top-text-wrapper .scroll-wrapper {
-    margin: 0 !important;
+    margin-top: 0 !important;
   }
 }
 
