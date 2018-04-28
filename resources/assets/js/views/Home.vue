@@ -39,7 +39,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-12 text-center">
-                  <h2>I build websites for small subscriptions</h2>
+                  <h2>I do subscription-based development</h2>
                   <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
                     <p>
                       <router-link to="/dev">Click here</router-link> if you're interested in learning more.

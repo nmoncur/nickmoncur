@@ -4,14 +4,15 @@
     <transition name="fade">
       <div>
         <div class="image-wrapper">
-          <progressive-img
+          <progressive-background
+            class="fixed"
             src="/images/dev.jpg"
             placeholder="/images/dev-load.jpg"
           />
         </div>
 
         <div class="top-text-wrapper row text-center">
-          <h1>Will code for...<br class="d-block d-sm-none">subscription?</h1>
+          <h1>I'm Nick, a subscription-based web developer</h1>
 
           <div :class="{ hide: textHide }" class="scroll-wrapper">
             <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">

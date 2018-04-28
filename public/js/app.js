@@ -16919,6 +16919,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -17235,7 +17236,8 @@ var render = function() {
             "div",
             { staticClass: "image-wrapper" },
             [
-              _c("progressive-img", {
+              _c("progressive-background", {
+                staticClass: "fixed",
                 attrs: {
                   src: "/images/dev.jpg",
                   placeholder: "/images/dev-load.jpg"
@@ -17246,11 +17248,7 @@ var render = function() {
           ),
           _vm._v(" "),
           _c("div", { staticClass: "top-text-wrapper row text-center" }, [
-            _c("h1", [
-              _vm._v("Will code for..."),
-              _c("br", { staticClass: "d-block d-sm-none" }),
-              _vm._v("subscription?")
-            ]),
+            _c("h1", [_vm._v("I'm Nick, a subscription-based web developer")]),
             _vm._v(" "),
             _c(
               "div",
@@ -17824,7 +17822,7 @@ var render = function() {
                         _c("div", { staticClass: "row" }, [
                           _c("div", { staticClass: "col-sm-12 text-center" }, [
                             _c("h2", [
-                              _vm._v("I build websites for small subscriptions")
+                              _vm._v("I do subscription-based development")
                             ]),
                             _vm._v(" "),
                             _c(
