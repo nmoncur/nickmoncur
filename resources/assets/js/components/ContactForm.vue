@@ -26,7 +26,7 @@
 
         <div class="form-group row">
           <div class="col-3">
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
 
           <div v-if="message" class="col-9"><span class="text-alert">{{ message }}</span></div>
