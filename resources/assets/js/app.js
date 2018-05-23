@@ -22,6 +22,7 @@ Vue.use(VueScrollTo, {
 import App from './views/App'
 import Dev from './views/Dev'
 import Home from './views/Home'
+import Pay from './views/Pay'
 
 const router = new VueRouter({
   mode: 'history',
@@ -36,6 +37,11 @@ const router = new VueRouter({
       name: 'dev',
       component: Dev,
     },
+    {
+      path: '/sign-up',
+      name: 'pay',
+      component: Pay,
+    },
   ],
   scrollBehavior () {
     return { x: 0, y: 0 }
@@ -48,4 +54,4 @@ const app = new Vue({
   el: '#app',
   components: { App },
   router,
-});
+})

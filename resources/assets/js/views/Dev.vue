@@ -49,7 +49,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <h2>Starting at only $50/mth</h2>
+              <h2>Starting at only $95/mth</h2>
               <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
                 <p>Includes a domain, hosting, and unlimited support.</p>
               </div>
