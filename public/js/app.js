@@ -17949,7 +17949,7 @@ var render = function() {
                                 "a",
                                 {
                                   attrs: {
-                                    href: "http://kmd.nickmoncur.com",
+                                    href: "http://kasimillerdesigns.com",
                                     target: "_blank"
                                   }
                                 },
